@@ -47,7 +47,7 @@ semilogy(x1,error1,'-',x2,error2,'-',x3,error3,'-')
 title('error between exact solution and computed solution')
 xlabel('x')
 ylabel('e_h(x)')
-legend({'e_{0.1}(x)','e_{0.01}(x)','e_{0.01}(x)'},'Location','southeast')
+legend({'e_{0.1}(x)','e_{0.01}(x)','e_{0.001}(x)'},'Location','southeast')
 
 x=transpose(log([0.1,0.01,0.001]));
 y1=transpose(log([error1(end),error2(end),error3(end)]));
